@@ -46,9 +46,8 @@ func TestHelperProcess(*testing.T) {
 	}
 }
 
-func TestLs(t *testing.T) {
+func TestRunLs(t *testing.T) {
 	cmd := helperCommand("ls")
-
 	out, err := runLs(cmd)
 	if err != nil {
 		t.Error(err)
